@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pasien</title>
+    <link rel="stylesheet" href="css/style_pasien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+
+    <a href="halaman_awal.php" class="logo"> <i class="fas fa-heartbeat"></i> <strong>Rumah Sakit </strong>Advent </a>
+
+    <nav class="navbar">
+        <a href="halaman_awal.php">Home</a>
+        <a href="#Data Pasien" >Data Pasien</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+    <main class="table">
+        <section class="table_header">
+            <h1>Data Pasien</h1>
+            <div class="input-group">
+              <input type="search" placeholder="Search">
+            </div>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id </th>
+                        <th>Pasien</th>
+                        <th>Jenis Layanan</th>
+                        <th>Dokter</th>
+                        <th>Ruangan</th>
+                        <th>ACT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bpk. Agus</td>
+                        <td>Rawat Inap</td>
+                        <td>Dr. Ackly A.</td>
+                        <td>ICU</td>
+                      <th>
+                        <button type="button" onclick="redirectToDashboard()" href="dashboard.php">
+                        <i class="fas fa-arrow-left"></i>
+                      </button></th>
+                    </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                      <td>2</td>
+                      <td>Bpk. Asna</td>
+                      <td>Rawat Inap</td>
+                      <td>Dr. Ackly A.</td>
+                      <td>ICU</td>
+                      <th>
+                        <button type="button" onclick="redirectToDashboard()" href="dashboard.html">
+                        <i class="fas fa-arrow-left"></i>
+                      </button></th>
+                  </tr>
+              </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script>
+    function redirectToDashboard() {
+    window.location.href = "dashboard.html";
+    }
+    </script>
+</body>
+</html>
